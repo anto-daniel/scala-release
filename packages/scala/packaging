@@ -1,14 +1,10 @@
 set -e
 
-echo "Creating scala dir..."
-BOSH_INSTALL_TARGET=/var/vcap/packages/scala
-mkdir -v -p ${BOSH_INSTALL_TARGET}
-
 echo "Extracting Scala..."
 dpkg -x scala/scala-2.13.1.deb ${BOSH_INSTALL_TARGET}
 
 echo "Extracting sbt..."
-tar xvzf scala/sbt-1.3.2.tgz -C ${BOSH_INSTALL_TARGET}
+unzip scala/sbt-1.3.2.zip -d ${BOSH_INSTALL_TARGET}
 
 echo "Copying Scala Program..."
-cp -rfv scala/ScalaExample.scala ${BOSH_INSTALL_TAGET}
+cp -rfv scala/ScalaExample.scala ${BOSH_INSTALL_TARGET}
