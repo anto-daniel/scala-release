@@ -1,0 +1,5 @@
+check process scala
+    with pidfile /var/vcap/sys/run/scala/scala.pid
+    start program "/var/vcap/jobs/scala/bin/ctl start"
+    stop program "/bin/bash /var/vcap/jobs/scala/bin/ctl stop"
+    group vcap

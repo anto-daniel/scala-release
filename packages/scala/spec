@@ -1,0 +1,9 @@
+---
+name: scala
+
+dependencies: []
+
+files:
+- scala/scala-2.13.1.deb
+- scala/sbt-1.3.2.tgz
+- scala/ScalaExample.scala

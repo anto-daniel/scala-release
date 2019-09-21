@@ -1,0 +1,11 @@
+---
+name: scala
+
+templates:
+  ctl.sh: bin/ctl
+
+packages: 
+- openjdk-8
+- scala
+
+properties: {}
