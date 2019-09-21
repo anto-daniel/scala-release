@@ -3,6 +3,7 @@
 RUN_DIR=/var/vcap/sys/run/scala
 LOG_DIR=/var/vcap/sys/log/scala
 PIDFILE=$RUN_DIR/scala.pid
+source /var/vcap/packages/openjdk-8/bosh/compile.env
 
 case $1 in
 
