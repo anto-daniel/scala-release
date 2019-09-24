@@ -4,6 +4,9 @@ RUN_DIR=/var/vcap/sys/run/scala
 LOG_DIR=/var/vcap/sys/log/scala
 PIDFILE=$RUN_DIR/scala.pid
 source /var/vcap/packages/openjdk-8/bosh/compile.env
+export PATH=/var/vcap/packages/scala/sbt/bin:$PATH
+export PATH=/var/vcap/packages/scala/usr/share/scala/bin:$PATH
+sudo mount /tmp -o remount,exec
 
 case $1 in
 
